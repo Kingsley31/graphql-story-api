@@ -21,6 +21,6 @@ app.get("/", (_req, res) => {
 const graphqlHandler = createHandler({ schema });
 app.use('/graphql',graphqlHandler);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('Server running at http://localhost:3000/graphql');
 });
