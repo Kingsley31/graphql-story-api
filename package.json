@@ -1,0 +1,37 @@
+{
+  "name": "graphql-story-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen-db-migrations": "npx drizzle-kit generate",
+    "migrate-db": "npx drizzle-kit migrate",
+    "start": "npx ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@graphql-tools/schema": "^10.0.10",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.1",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.4",
+    "express": "^4.21.1",
+    "graphql": "^16.9.0",
+    "graphql-http": "^1.22.3",
+    "graphql-import-node": "^0.0.5",
+    "graphql-tools": "^9.0.5",
+    "pg": "^8.13.1",
+    "ruru": "^2.0.0-beta.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "^0.28.1",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.2"
+  }
+}

@@ -1,0 +1,21 @@
+type Story {
+  id: ID!
+  title: String!
+  body: String!
+}
+
+input StoryInput {
+  title: String!
+  body: String!
+}
+
+type Query {
+  getStories: [Story]
+  getStory(id: ID!): Story
+}
+
+type Mutation {
+  createStory(input: StoryInput): Story
+  updateStory(id: ID!, input: StoryInput): Story
+  deleteStory(id: ID!): String
+}

@@ -1,0 +1,5 @@
+#Untrack node_modules folder
+node_modules
+
+#Untrack .env file
+.env
